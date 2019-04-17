@@ -1,6 +1,6 @@
 # Cistrome-GO 1.0.0
 
-Functional enrichment analysis of transcription factor ChIP-seq peaks
+Functional enrichment analysis of transcription factor ChIP-seq peaks. The package of http://go.cistrome.org.
 
 ## Requirements
 ##### This software is based on python2.7, some python packages are required.
