@@ -20,7 +20,9 @@ def optValidate(optparser):
         os.makedirs(options.output)
     try:
         if options.expr:
-            pass
+            if not os.path.exists(options.expr):
+                Info("ERROR: Differential expression file not exists.")
+                sys.exit(1)
         else:
             options.expr = False
     except:
