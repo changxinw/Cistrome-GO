@@ -6,7 +6,7 @@ import json
 def runCistromeGO(args):
     args = optValidate(args)
     symbol_rp_dict = calcRPscore(args.bed, args.peakn, args.assembly, args.decay)
-    json.dump(symbol_rpt_dict, open("%s_rp.json"%args.prefix, "w"))
+    json.dump(symbol_rp_dict, open("%s_rp.json"%args.prefix, "w"))
     if not args.expr:
         res = annotIndices(symbol_rp_dict, args.assembly, True, args.max_gene_number, args.min_gene_number, args.prefix)
     else:
