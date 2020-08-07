@@ -1,6 +1,7 @@
 from rpscore import calcRPscore
 from enrichment import annotIndices
 from opt_validator import optValidate
+import json
 
 def runCistromeGO(args):
     args = optValidate(args)
@@ -10,6 +11,7 @@ def runCistromeGO(args):
     else:
         from expr_combine import calcRPT
         symbol_rpt_dict = calcRPT(args.expr, args.exprinfo, symbol_rp_dict, args.assembly, args.dego, args.logfc_cut, args.fdr_cut)
+        json.dump(symbol_rpt_dict, open("%s_rp.json"%prefix, "w"))
         res = annotIndices(symbol_rpt_dict, args.assembly, False, args.max_gene_number, args.min_gene_number, args.prefix)
     return res
 
