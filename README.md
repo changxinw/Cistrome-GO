@@ -5,8 +5,8 @@ Functional enrichment analysis of transcription factor ChIP-seq peaks. The packa
 ## Requirements
 ##### This software is based on python2.7, some python packages are required.
 
-- xlmhg>=2.4.9
-- mne>=0.17.0
+- xlmhg==2.4.9
+- mne==0.17.0
 
 ## Installation
 
