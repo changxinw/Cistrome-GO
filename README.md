@@ -7,6 +7,7 @@ Functional enrichment analysis of transcription factor ChIP-seq peaks. The packa
 
 - xlmhg==2.4.9
 - mne==0.17.0
+- scipy
 
 ## Installation
 
