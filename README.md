@@ -3,7 +3,7 @@
 Functional enrichment analysis of transcription factor ChIP-seq peaks. The package of http://go.cistrome.org.
 
 ## Requirements
-##### This software is based on python2.7, some python packages are required.
+##### This software is based on **python2.7**, some python packages are required.
 
 - xlmhg==2.4.9
 - mne==0.17.0
@@ -12,7 +12,9 @@ Functional enrichment analysis of transcription factor ChIP-seq peaks. The packa
 ## Installation
 
 ```
-git clone https://github.com/WChangson/Cistrome-GO.git && cd Cistrome-GO && python setup.py install
+git clone https://github.com/WChangson/Cistrome-GO.git
+cd Cistrome-GO
+python setup.py install
 ```
 
 ## Usage
